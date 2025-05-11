@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT-JEE Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-image: url('assets/iit rorkee.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: still;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.574);
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #00264d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        nav .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.7;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            background-color: #004080;
+            color: white;
+            margin: 0;
+        }
+
+        p {
+            padding: 0 20px 20px;
+            line-height: 1.6;
+        }
+
+        .main {
+            
+            height: 220px;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .panel {
+            background-color: #e0f7f1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            width: 320px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s, opacity 0.2s;
+            text-decoration: none;
+            color: black;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card .image {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 180px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        @media (max-width: 700px) {
+            .panel {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="title">JEE MAINS AND ADVANCE</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="main.html">Rank Predictor (Main)</a></li>
+          <li><a href="adv.html">Rank Predictor (Advanced)</a></li>
+        </ul>
+      </nav>
+
+    <h2>IIT-JEE</h2>
+
+    <p>
+        The Joint Entrance Examination (JEE) is an engineering entrance assessment conducted for admission to various engineering colleges in India.
+        It comprises two different examinations: the JEE-Main and the JEE-Advanced.
+    </p>
+
+    <p>
+        The Joint Seat Allocation Authority (JoSAA) conducts the joint admission process for a total of 23 Indian Institutes of Technology (IITs),
+        31 National Institutes of Technology (NITs), 25 Indian Institutes of Information Technology (IIITs), and other Government Funded Technical Institutes (GFTIs),
+        based on the rank obtained by a student in JEE-Main or JEE-Advanced.
+    </p>
+
+    <p>
+        Institutes like IISERs, IIPE, RGIPT, IIST, and IISc use JEE-Advanced scores for admission but are not part of JoSAA counselling.
+        Once a student takes admission to an IIT, they cannot appear for JEE-Advanced again.
+    </p>
+
+    <div class="main"></div>
+
+    <div class="panel">
+        <!-- JEE Main Card -->
+        <a class="card" href="https://jeemain.nta.nic.in/" target="_blank">
+            <div class="image" style="background-image: url('assets/jee main.webp');"></div>
+            <div class="card-content">
+                <h3>JEE-Main</h3>
+                <p>
+                    JEE-Main is conducted by the National Testing Agency (NTA). It consists of two papers: Paper-I for B.E./B.Tech and Paper-II for B.Arch/B.Planning.
+                    Both are computer-based tests.
+                </p>
+            </div>
+        </a>
+
+        <!-- JEE Advanced Card -->
+        <a class="card" href="https://jeeadv.ac.in/" target="_blank">
+            <div class="image" style="background-image: url('assets/jee advanced.jpg');"></div>
+            <div class="card-content">
+                <h3>JEE-Advanced</h3>
+                <p>
+                    JEE-Advanced is conducted for admission into 23 IITs and other top institutes like IISc Bangalore and IIST Thiruvananthapuram.
+                    It is held only for students who qualify the JEE-Main.
+                </p>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>
